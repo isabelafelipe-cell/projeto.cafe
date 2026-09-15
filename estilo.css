@@ -1,0 +1,236 @@
+/* CONFIGURAÇÃO DA PÁGINA */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5e6d3;
+    color: #3e2723;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: rgb(121, 75, 61);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 45px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* MENU */
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.inicio h2 {
+    font-size: 35px;
+}
+
+.inicio p {
+    font-size: 19px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: rgb(121, 75, 61);
+    color: white;
+    text-decoration: none;
+
+    padding: 14px 25px;
+    margin-top: 15px;
+
+    border-radius: 25px;
+}
+
+.botao:hover {
+    background-color:rgb(121, 75, 61);
+}
+
+
+/* TÍTULOS DAS SEÇÕES */
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(121, 75, 61);
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* CARD */
+
+.card {
+    background-color: white;
+
+    width: 280px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+
+/* EFEITO DO CARD */
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ESPAÇO DA FOTO */
+
+.foto {
+    width: 100%;
+    height: 180px;
+
+    background-color: #ead5bd;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+}
+
+
+/* NOME DOS PRODUTOS */
+
+h3 {
+    color:rgb(121, 75, 61);
+    font-size: 22px;
+}
+
+
+/* PREÇO */
+
+.card strong {
+    color: rgb(121, 75, 61);
+    font-size: 18px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background-color: #ead5bd;
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: rgb(121, 75, 61);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .inicio h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+}
